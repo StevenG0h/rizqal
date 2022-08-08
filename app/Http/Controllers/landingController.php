@@ -3,11 +3,13 @@
 namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
+use Illuminate\Support\Facades\DB;
 
 class LandingController extends Controller
 {
     public function index(){
-        return view('cozzastore/index');
+        $data = DB::table('produk')->limit(4)->get();
+        return view('cozzastore/index',['data'=>$data]);
     }
     public function product(){
         return view('cozzastore/product');

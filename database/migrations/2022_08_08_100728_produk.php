@@ -18,7 +18,7 @@ class Produk extends Migration
             $table->string('nama_produk');
             $table->string('harga');
             $table->string('gambarProduk');
-            $table->string('id_kategori');
+            $table->string('kategori');
         });
     }
 
