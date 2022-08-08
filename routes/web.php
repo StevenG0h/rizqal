@@ -20,3 +20,5 @@ Route::get('/', function () {
 Auth::routes();
 
 Route::get('/home', [App\Http\Controllers\LandingController::class, 'index'])->name('home');
+Route::get('/product', [App\Http\Controllers\LandingController::class, 'product'])->name('product');
+Route::get('/about', [App\Http\Controllers\LandingController::class, 'about'])->name('about');
