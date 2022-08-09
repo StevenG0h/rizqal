@@ -12,7 +12,8 @@ class LandingController extends Controller
         return view('cozzastore/index',['data'=>$data]);
     }
     public function product(){
-        return view('cozzastore/product');
+        $data = DB::table('produk')->get();
+        return view('cozzastore/product',['data'=>$data]);
     }
     public function about(){
         return view('cozzastore/about');

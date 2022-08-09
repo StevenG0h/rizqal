@@ -5,6 +5,7 @@
 <div class="container">
     <h1>Admin</h1>
     <a href="{{ route('addProduct') }}" class="btn btn-success">Add Product</a>
+    <a href="/home" class="btn btn-info">View Website</a>
     <table class="table">
         <tr>
             <th>Id</th>
